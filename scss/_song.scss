@@ -1,0 +1,102 @@
+li {
+    border-bottom: 1px solid lightgrey;
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.ranking, .songs, .date {
+    display: flex;
+    flex-direction: column;
+}
+.songs {
+    display: inline;
+    width: 60vw;
+    justify-content: center;
+    flex:1 0 auto
+}
+
+.ranking {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.space {
+    flex:1;
+}
+
+.title {
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+.rank {
+    // position: relative;
+    font-size: 5rem;
+    font-weight: 600;
+    margin:0;
+    padding: 0;
+}
+
+.date {
+    position: relative;
+}
+.artist {
+    font-style: italic;
+}
+
+.published {
+    // right: 100px;
+    // display: inline;
+    font-size: .7rem;
+    position: relative;
+    bottom: 8px;
+    right: 16px;
+
+}
+
+.streams {
+    font-size: .7rem;
+    color: lightgrey;
+    margin-bottom: 10px;
+}
+
+.book {
+    display: inline-block;
+    justify-content: center;
+    flex:1 0 20%;
+}
+
+.description {
+    font-size: .7rem;
+    right: 16px;
+
+}
+
+.info {
+    position: relative;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.id-number {
+        font-size: 2rem;
+        font-weight: 600;
+        margin:0;
+        padding: 0;
+}
+
+.book-title {
+    font-weight: 600;
+}
+
+.book-type {
+    font-size: .7rem;
+    color: rgb(105, 102, 102);
+    margin-bottom: 10px;
+}
+
+.book-cover {
+    height: 100px;
+    margin-right: 10px;
+}

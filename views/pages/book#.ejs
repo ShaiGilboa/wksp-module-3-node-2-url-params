@@ -1,0 +1,13 @@
+<%- include( '../partials/header') %>
+    <div class="box3">
+        <img src="<%-book.imgUrl%>">
+        <h1 class="book-title"><%- book.title %></h1>
+        <p class="author-name"><%- book.author %></p>
+        <p class="type"><%- book.type %></p>
+        <p  class="current-description"><%- book.description %></p>
+    </div>
+
+    <%- include('../partials/buttons', {pageNumber: bookId, pageType: 'book'}) %>
+
+    
+<%- include( '../partials/footer') %>

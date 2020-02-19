@@ -26,7 +26,9 @@ app.get('/question10', q10)
 
 ```js
 // ...
-
+app.get('/question/:number', (req, res) => {
+    const number = req.param.number; // this will become the value of the key 'number'
+})
 ```
 
 </div></div>

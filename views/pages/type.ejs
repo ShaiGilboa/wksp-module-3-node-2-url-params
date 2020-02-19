@@ -1,0 +1,6 @@
+<%- include( '../partials/header') %>
+    <% let typeArr = books.filter(book => book.type === type) %>
+    <ol>
+        <%- include('../partials/book', {books: typeArr}) %>
+    </ol>
+<%- include( '../partials/footer') %>
