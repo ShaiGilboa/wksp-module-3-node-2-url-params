@@ -83,6 +83,129 @@ codeblock {
   margin: 12px 32px 6px 0;
   padding: 12px 14px; }
 
+li {
+  border-bottom: 1px solid lightgrey;
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-between; }
+
+.ranking, .songs, .date {
+  display: flex;
+  flex-direction: column; }
+
+.songs {
+  display: inline;
+  width: 60vw;
+  justify-content: center;
+  flex: 1 0 auto; }
+
+.ranking {
+  display: inline-block;
+  margin-right: 20px; }
+
+.space {
+  flex: 1; }
+
+.title {
+  margin-top: 40px;
+  font-weight: 600; }
+
+.rank {
+  font-size: 5rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0; }
+
+.date {
+  position: relative; }
+
+.artist {
+  font-style: italic; }
+
+.published {
+  font-size: .7rem;
+  position: relative;
+  bottom: 8px;
+  right: 16px; }
+
+.streams {
+  font-size: .7rem;
+  color: lightgrey;
+  margin-bottom: 10px; }
+
+.book {
+  display: inline-block;
+  justify-content: center;
+  flex: 1 0 20%; }
+
+.description {
+  font-size: .7rem;
+  right: 16px; }
+
+.info {
+  position: relative;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row; }
+
+.id-number {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0; }
+
+.book-title {
+  font-weight: 600; }
+
+.book-type {
+  font-size: .7rem;
+  color: #696666;
+  margin-bottom: 10px; }
+
+.book-cover {
+  height: 100px;
+  margin-right: 10px; }
+
+.box2 {
+  margin: 50px auto;
+  width: 400px;
+  height: 400px;
+  max-width: 400px;
+  max-height: 400px;
+  box-shadow: 3px 3px 10px 10px lightgrey;
+  background-color: white;
+  border-radius: 5px; }
+
+.song-title {
+  font-size: 1.5rem;
+  margin: 0 30px;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid lightblue; }
+
+.artist-name {
+  text-align: center;
+  font-size: 1rem;
+  padding: 15px 0; }
+
+.streams2 {
+  text-align: center;
+  font-size: 8rem;
+  color: lightblue;
+  font-weight: 600; }
+
+button {
+  background-color: #B1E5F2;
+  font-size: 1rem;
+  width: 90px;
+  height: 75px;
+  border-radius: 25px;
+  margin: 25px; }
+
+.buttons {
+  display: flex;
+  justify-content: space-between; }
+
 body {
   background: #fafafa;
   display: flex;

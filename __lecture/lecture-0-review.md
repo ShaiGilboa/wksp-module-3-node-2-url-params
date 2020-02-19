@@ -32,9 +32,9 @@ What notation do we use to run JS snippets inside of an `.ejs` file?
 ```js
 // Example
 <ul>
-    array.forEach(element => {
-        <li>element</li>
-    });
+    <% array.forEach(element => { %>
+        <li><%= element %></li>
+    <% }); %>
 </ul>
 ```
 
@@ -42,13 +42,21 @@ What notation do we use to run JS snippets inside of an `.ejs` file?
 
 ## Express
 
-- What express _routing method_ did we use yesterday?
-- What are its parameters?
+- What express _routing method_ did we use yesterday? `.get()`
+- What are its parameters? `
 - What is the minimum amount of code to set up an express server?
 
 ```js
 // Example
+const express = require('express');
+const app = express();
 
+
+app.get('/hello', function (request, response) {
+    response.send('hello');
+} )
+
+app.listen(8000, console.log('Server is up! port 8000'))
 ```
 
 ---

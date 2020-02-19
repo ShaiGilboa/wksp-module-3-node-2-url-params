@@ -1,0 +1,21 @@
+<script>
+    const previous = (number, type) => {
+        console.log(typeof(Number(number)))
+        location.href = `/${type}/${Number(number)-1}`;
+    }
+    const next = (number, type) => {
+        location.href = `/${type}/${Number(number)+1}`;
+    }
+    const home = (number, type) => {
+        if (type === 'song')location.href = `/top50`;
+        if (type === 'book'){
+            console.log('hi')
+            location.href = `/books`;
+        }
+    }
+</script>
+<div class="buttons">
+    <button onclick="previous('<%=pageNumber%>', '<%=pageType%>')">Previous</button>
+    <button onclick="home('<%=pageNumber%>','<%=pageType%>')">Back to list</button>
+    <button onclick="next('<%-pageNumber%>','<%=pageType%>')">Next</button>
+</div>
